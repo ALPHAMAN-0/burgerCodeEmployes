@@ -3,6 +3,18 @@
 > **A lightweight employee management API for burger restaurants.**
 > Track shifts, hours, tips, and roles for fast-food staff. Built with FastAPI + SQLite.
 
+## Architecture / How it Works
+
+```mermaid
+flowchart LR
+    A[User] --> B[Burgercodeemployes]
+    B --> C{Logic}
+    C --> D[(Data)]
+    C --> E[Output]
+    D --> C
+```
+
+
 ## About
 
 `burgerCodeEmployes` is a tiny, self-contained REST API for managing employees at a burger joint — schedules, clock-in/out, role assignment (cashier, grill, fry, manager), and tip distribution. Designed to be dropped into a kiosk or used by an owner who wants their employee data on the LAN, no SaaS lock-in.

@@ -7,11 +7,12 @@
 
 ```mermaid
 flowchart LR
-    A[User] --> B[Burgercodeemployes]
-    B --> C{Logic}
-    C --> D[(Data)]
-    C --> E[Output]
-    D --> C
+    Client[Client] -->|HTTP| API[FastAPI app]
+    API -->|query/mutate| DB[(SQLite/Postgres)]
+    API --> Models[Pydantic models]
+    API --> Routes[Route handlers]
+    Routes --> DB
+    Models --> Routes
 ```
 
 

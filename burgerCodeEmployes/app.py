@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import utils.transport
+import utils.session
 from datetime import date, datetime, timedelta
 from typing import Optional
 

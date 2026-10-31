@@ -13,5 +13,4 @@ build/
 *.sqlite
 *.sqlite3
 .DS_Store
-config.bat
 node_modules
